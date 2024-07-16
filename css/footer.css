@@ -39,6 +39,11 @@ footer .main-block .block p a {
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     color: rgb(139, 138, 138);
+    transition: 0.1s ease-in-out;
+}
+
+footer .main-block .block p a:hover {
+    color: white;
 }
 
 footer .hr {

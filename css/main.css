@@ -1,0 +1,109 @@
+/* Секция hero */
+.hero {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url("/images/hero-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 660px;
+}
+
+.hero .main-text {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.hero .main-text h1 {
+    font-size: 52px;
+    padding-bottom: 25px;
+}
+
+.hero .main-text p {
+    font-size: 32px;
+    padding-bottom: 25px;
+}
+
+.hero .main-text span {
+    font-size: 18px;
+}
+
+
+/* Стили для секции с жанрами */
+.ganre .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ganre {
+    padding: 20px 100px;
+}
+
+.ganre h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 52px;
+    padding-bottom: 35px;
+}
+
+.ganre .block {
+    background-color: #1f1d1d;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 12px 20px;
+}
+
+.ganre .block span a {
+    color: white;
+    font-size: 16px;
+}
+
+/* Стили для секций с фильмами для детей */
+.movies-forkids {
+    padding: 100px;
+}
+
+.movies-forkids h1 {
+    font-size: 52px;
+    padding-bottom: 50px;
+}
+
+.movies-forkids .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.movies-forkids .container .block {
+    background-color: #1f1d1d;
+    width: 250px;
+    border-radius: 15px;
+    height: 350px;
+}
+
+.movies-forkids .container .block img {
+    width: 200px;
+    padding: 25px;
+}
+
+.movies-forkids .container .block p {
+    padding-left: 25px;
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+.movies-forkids .container .block a {
+    padding-left: 25px;
+    font-size: 16px;
+    color: red;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+}
+
+.movies-forkids .container .block a:hover {
+    color: rgb(202, 30, 30);
+}
