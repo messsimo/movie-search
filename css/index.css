@@ -1,0 +1,227 @@
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Универсальные стили */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    color: white;
+    width: 100%;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+     max-width: 100%; /* Чтобы картинка не выходила за пределы родительского блока */
+}
+
+/* Cтили для секции hero */
+.hero {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url("/images/hero-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 660px;
+}
+
+.hero .logo {
+    padding-top: 30px;
+    padding-left: 100px;
+}
+
+.hero .logo h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 900;
+    font-size: 42px;
+    color: red;
+}
+
+.hero .main-text {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.hero .main-text h1 {
+    font-size: 52px;
+    padding-bottom: 25px;
+}
+
+.hero .main-text p {
+    font-size: 32px;
+    padding-bottom: 25px;
+}
+
+.hero .main-text span {
+    font-size: 18px;
+}
+
+.hero .main-text button {
+    margin-top: 45px;
+    width: 200px;
+    height: 40px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+}
+
+.hero .main-text button a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+}
+
+/* Секция TV */
+.tv {
+    height: 470px;
+}
+
+.tv .img {
+    float: right;
+    padding-top: 90px;
+    padding-right: 150px;
+}
+
+.tv .img img {
+    width: 520px;
+    height: 300px;
+}
+
+.tv .desc-text {
+    padding-top: 150px;
+    padding-bottom: 90px;
+    padding-left: 190px;
+    width: 400px;
+}
+
+.tv .desc-text h1 {
+    font-size: 48px;
+    padding-bottom: 15px;
+}
+
+.tv .desc-text h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Стили для секции с дивайсами */
+.divaces {
+    height: 470px;
+}
+
+.divaces img {
+    padding-top: 90px;
+    padding-left: 150px;
+}
+
+.divaces .desc-text {
+    float: right;
+    padding-top: 150px;
+    padding-right: 140px;
+    width: 500px;
+}
+
+.divaces .desc-text h1 {
+    font-size: 48px;
+    padding-bottom: 15px;
+}
+
+.divaces .desc-text p {
+    font-size: 18px;
+    font-weight: 400; 
+}
+
+/* Стили для секции с вопросами */
+.questions {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.questions h1,
+.questions p {
+    text-align: center;
+}
+
+.questions h1 {
+    font-size: 42px;
+    padding-bottom: 20px;
+}
+
+.questions p {
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 75px;
+}
+
+.questions form {
+    margin: 0 auto;
+    width: 600px;
+    border-radius: 15px;
+    /* background-color: rgba(78, 74, 74, 0.2); */
+}
+
+.questions form label {
+    padding-left: 30px;
+    font-size: 18px;
+    font-family: "Ubuntu", sans-serif;
+    padding-top: 40px;
+}
+
+.questions form input,
+.questions form textarea {
+    margin-left: 30px;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 86%;
+    outline: none;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 7px;
+    height: 40px;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
+
+.questions form input {
+    margin-bottom: 35px;
+}
+
+.questions form textarea {
+    padding-top: 10px;
+    height: 80px;
+}
+
+.questions form .alert {
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(195, 194, 194);
+}
+
+.questions form button {
+    width: 89%;
+    margin-left: 30px;
+    margin-top: 5px;
+    height: 30px;
+    background-color: red;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    /* margin-bottom: 40px; */
+}
+

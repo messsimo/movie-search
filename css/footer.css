@@ -1,0 +1,59 @@
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Универсальные стили */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    color: white;
+    width: 100%;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Стили для футера */
+footer {
+    border-top: 1px solid #333;
+}
+
+footer .main-block {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+footer .main-block .block p {
+    padding-bottom: 5px;
+}
+
+footer .main-block .block p a {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    color: rgb(139, 138, 138);
+    transition: 0.1s ease-in-out;
+}
+
+footer .main-block .block p a:hover {
+    color: white;
+}
+
+footer .hr {
+    border-top: 1px solid #333;
+}
+
+footer span {
+    color: rgb(139, 138, 138);
+    display: grid;
+    place-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
