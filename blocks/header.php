@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/movie.css">
     <title>Spectra Films</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="">Collections</a></li>
+                <li><a href="/main.php">Collections</a></li>
                 <li><a href="">About us</a></li>
                 <li><a href="">Contact</a></li>
                 <li><a href="/reg.php" class="btn">Sign In</a></li>

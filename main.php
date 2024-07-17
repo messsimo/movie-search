@@ -1,3 +1,27 @@
+<?php
+    // Подключение баззы данных
+    require("data/db.php");
+
+    // Выборка из БД
+    $sql = "SELECT * FROM `genre`";
+    $stmt = $pdo->query($sql);
+    $genre = $stmt->fetchAll(2);
+
+    $sql = "SELECT * FROM `movies`";
+    $stmt = $pdo->query($sql);
+    $movies = $stmt->fetchAll(2);
+
+
+    // Вывод фильмов по жанру
+    if (isset($_GET["genre"]) === true) {
+        $id = $_GET["genre"];
+        $sql = "SELECT * FROM `movies` WHERE `genre` = '$id'";
+        $stmt = $pdo->query($sql);
+        $movies = $stmt->fetchAll(2);
+    }
+?>
+
+
 <!-- Секция hero -->
     <div class="hero">
         <?php
@@ -18,50 +42,33 @@
         <h1>Сollection</h1>
 
         <div class="container">
-            <div class="block">
-                <span><a href="#">For Kids</a></span>
-            </div>
+            <!-- Переборка жанров из таблицы 'genre' и вывод всех жанров -->
+            <?php foreach ($genre as $el) { ?>
+                <div class="block">
+                    <span><a href="?genre=<?php echo $el["id"]; ?>"><?php echo $el["name"]; ?></a></span>
+                </div>
+            <?php } ?>
 
-            <div class="block">
-                <span><a href="#">Comedy</a></span>
-            </div>
-
-            <div class="block">
-                <span><a href="#">Fantastic</a></span>
-            </div>
-
-            <div class="block">
-                <span><a href="#">Detectives</a></span>
-            </div>
-
-            <div class="block">
-                <span><a href="#">Horror</a></span>
-            </div>
+            <!-- Логика заключается в том, что мы при нажатии на жанр получаем ID жанра,а после мы его обрабытваем через $_GET данные
+            и уже после мы делаем проверку на то УСТНОВЛЕНО ли значение в БД с данным жанром и если TRUE то выводим все данным по данному жанру -->
         </div>
     </div>
 
-    <!-- Секция с фильмами For Kids -->
+    <!-- Секция с фильмами-->
     <div class="movies-forkids">
-        <h1>For Kids</h1>
 
+        <h1>Top movies:</h1>
+        
         <div class="container">
+        <?php foreach ($movies as $el) { ?>
             <div class="block">
-                <img src="" alt="">
-                <p>Name</p>
-                <a href="">Watch now</a>
+                <span><?php echo $el["rating"]; ?></span>
+                <img src="<?php echo $el["photo"]; ?>" alt="">
+                <p><?php echo $el["name"]; ?></p>
+                <a href="/movie.php?id=<?php echo $el["id"]; ?>">See more</a>
+                <!-- Добавить потом рейтинг поверх картинки -->
             </div>
-
-            <div class="block">
-                <img src="" alt="">
-                <p>Name</p>
-                <a href="">Watch now</a>
-            </div>
-
-            <div class="block">
-                <img src="" alt="">
-                <p>Name</p>
-                <a href="">Watch now</a>
-            </div>
+        <?php } ?>
         </div>
     </div>
 
