@@ -54,14 +54,15 @@
         </div>
     </div>
 
-    <!-- Секция с фильмами For Kids -->
+    <!-- Секция с фильмами-->
     <div class="movies-forkids">
 
-        <h1>Top results:</h1>
+        <h1>Top movies:</h1>
         
         <div class="container">
         <?php foreach ($movies as $el) { ?>
             <div class="block">
+                <span><?php echo $el["rating"]; ?></span>
                 <img src="<?php echo $el["photo"]; ?>" alt="">
                 <p><?php echo $el["name"]; ?></p>
                 <a href="/movie.php?id=<?php echo $el["id"]; ?>">See more</a>

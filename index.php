@@ -26,7 +26,7 @@
 
             <span>Ready to watch? Login to your account or register.</span><br>
 
-            <button><a href="/reg">Sign in</a></button>
+            <button><a href="/main.php">Get started</a></button>
         </div>
     </div>
 

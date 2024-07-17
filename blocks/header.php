@@ -13,7 +13,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="">Collections</a></li>
+                <li><a href="/main.php">Collections</a></li>
                 <li><a href="">About us</a></li>
                 <li><a href="">Contact</a></li>
                 <li><a href="/reg.php" class="btn">Sign In</a></li>
