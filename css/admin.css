@@ -1,0 +1,166 @@
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Универсальные стили */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    color: white;
+    width: 100%;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+     max-width: 100%; /* Чтобы картинка не выходила за пределы родительского блока */
+}
+
+/* Стили */
+header {
+    border-bottom: 1px solid white;
+    background-color: #1d1c1c;
+}
+
+header h1 {
+    padding-top: 30px;
+    color: red;
+    font-size: 32px;
+    padding-bottom: 30px;
+    padding-left: 120px;
+}
+
+header h1 b {
+    color: white
+}
+
+header a {
+    float: right;
+    margin-top: 30px;
+    margin-right: 100px;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: red;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.movies h1 {
+    padding-top: 100px;
+    padding-left: 110px;
+    padding-bottom: 50px;
+}
+
+.movies .movies-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 70px;
+    padding-left: 110px;
+}
+
+.movies .movies-info .block {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.movies .movies-info .block img {
+    width: 180px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.movies .movies-info .block form label {
+    font-size: 14px;
+}
+
+.movies .movies-info .block form input,
+.movies .movies-info .block form textarea {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(153, 153, 153);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.movies .movies-info .block form button {
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    transition: 0.2s ease-in-out;
+}
+
+.genre h1 {
+    padding-top: 100px;
+    padding-left: 110px;
+    padding-bottom: 50px; 
+}
+
+.genre .genre-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 110px;
+
+}
+
+.genre .genre-info .block {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.genre .genre-info .block input {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(153, 153, 153);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    margin-top: 5px;
+
+}
+
+.genre .genre-info .block form button {
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    transition: 0.2s ease-in-out;
+}
+
+.movies .movies-info .block form button:hover, 
+.genre .genre-info .block form button:hover {
+    background-color: rgb(202, 30, 30);;
+}
