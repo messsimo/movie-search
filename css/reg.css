@@ -1,0 +1,121 @@
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Универсальные стили */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    color: white;
+    width: 100%;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+     max-width: 100%; /* Чтобы картинка не выходила за пределы родительского блока */
+}
+
+/* Стили для шапки */
+header {
+    height: 100px;
+}
+
+header h1 {
+    line-height: 100px;
+    font-size: 42px;
+    color: red;
+    padding-left: 110px;
+}
+
+header nav {
+    float: right;
+    line-height: 100px;
+    padding-right: 120px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin-right: 50px;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 18px;
+}
+
+/* Стили для секции с формой регистрации/входа */
+.container .block {
+    padding: 100px 0;
+    display: flex;
+    margin-left: 250px;
+}
+
+.container .block .sign-form,
+.container .block .reg-form {
+    background-color: #333;
+    padding: 20px;
+    margin-right: 50px;
+    border-radius: 15px;
+    min-width: 400px;
+    max-width: 400px;
+}
+
+.container .block .sign-form h1,
+.container .block .reg-form h1 {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.container .block .sign-form form,
+.container .block .reg-form form {
+    margin-left: 20px;
+}
+ 
+.container .block .sign-form form input,
+.container .block .reg-form form input {
+    margin-top: 5px;
+    margin-bottom: 25px;
+    width: 90%;
+    border-radius: 5px;
+    background-color: black;
+    border: 1px solid white;
+    height: 30px;
+    padding-left: 10px;
+    outline: none;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
+
+.container .block .sign-form form button,
+.container .block .reg-form form button {
+    background-color: red;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    width: 92%;
+    height: 35px;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.container .block .sign-form form .alert,
+.container .block .reg-form form .alert {
+    color: silver;
+}
