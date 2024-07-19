@@ -42,4 +42,4 @@ Spectra is a movie search website built using CRUD (Create, Read, Update, Delete
 
 
 ## Screenshots
-
+![Пример скриншота](images/readme1.png)
