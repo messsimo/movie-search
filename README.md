@@ -1,4 +1,4 @@
-## Spectraё
+## Spectra
 
 Spectra is a movie search website built using CRUD (Create, Read, Update, Delete) technology.
 
