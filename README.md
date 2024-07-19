@@ -46,4 +46,8 @@ Spectra is a movie search website built using CRUD (Create, Read, Update, Delete
   <img src="images/readme1.png" alt="Скриншот 1" width="200"/>
   <img src="images/readme2.png" alt="Скриншот 2" width="200"/>
   <img src="images/readme3.png" alt="Скриншот 3" width="200"/>
+  <img src="images/readme4.png" alt="Скриншот 3" width="200"/>
+  <img src="images/readme5.png" alt="Скриншот 3" width="200"/>
+  <img src="images/readme6.png" alt="Скриншот 3" width="200"/>
+  <img src="images/readme7.png" alt="Скриншот 3" width="200"/>
 </p>
